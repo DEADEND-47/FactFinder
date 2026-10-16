@@ -132,11 +132,16 @@ This project builds upon and draws inspiration from the following work:
 
 ---
 
-## 📞 Contact & Support
+## 👥 Team Members & Contributions
 
-- **Author**: Kunal Lamba ([@DEADEND-47](https://github.com/DEADEND-47))
-- **Issues**: Please use the [GitHub Issue Tracker](https://github.com/DEADEND-47/ClaimAI/issues) to report bugs or request features
-- **Email**: [kunallamba47@gmail.com](mailto:kunallamba47@gmail.com)
+**Team Name - Fine Shyts**
+
+| # | Member | Domain | Contributions |
+|:---:|:---|:---|:---|
+| 1 | [Kunal](https://github.com/DEADEND-47) | **Frontend** | Developed the FactFinder frontend, focusing on responsive UI design, reusable React components, intuitive navigation, and seamless integration with backend APIs. |
+| 2 | [Dev](https://github.com/DevKumar005) | **AI** | Led AI development and integration, working on intelligent search, AI-powered analysis, natural language processing, and relevant response generation for fact verification. |
+| 3 | [Anurag](https://github.com/anuragkumar88) | **Backend** | Developed backend services and API endpoints, implemented application logic, integrated frontend and backend components, and contributed to testing, debugging, and deployment. |
+| 4 | [Uday](https://github.com/singhuday1) | **Data** | Managed data processing and organization, supported database integration and data retrieval, prepared and validated datasets, and contributed to data quality and documentation. |
 
 ---
 
