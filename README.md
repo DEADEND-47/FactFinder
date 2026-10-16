@@ -140,7 +140,7 @@ This project builds upon and draws inspiration from the following work:
 |:---:|:---|:---|:---|
 | 1 | [Kunal](https://github.com/DEADEND-47) | **Frontend** | Developed the FactFinder frontend, focusing on responsive UI design, reusable React components, intuitive navigation, and seamless integration with backend APIs. |
 | 2 | [Dev](https://github.com/DevKumar005) | **AI** | Led AI development and integration, working on intelligent search, AI-powered analysis, natural language processing, and relevant response generation for fact verification. |
-| 3 | [Anurag](https://github.com/anuragkumar88) | **Backend** | Developed backend services and API endpoints, implemented application logic, integrated frontend and backend components, and contributed to testing, debugging, and deployment. |
+| 3 | [Anurag](https://github.com/anuragkumar80) | **Backend** | Developed backend services and API endpoints, implemented application logic, integrated frontend and backend components, and contributed to testing, debugging, and deployment. |
 | 4 | [Uday](https://github.com/singhuday1) | **Data** | Managed data processing and organization, supported database integration and data retrieval, prepared and validated datasets, and contributed to data quality and documentation. |
 
 ---
