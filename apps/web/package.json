@@ -1,14 +1,14 @@
 {
   "name": "@fact-checker/web",
   "version": "0.1.0",
-  "description": "Frontend for the ClaimeAI, a LangGraph implementation to verify factual accuracy of text.",
+  "description": "Frontend for FactFinder, a LangGraph implementation to verify factual accuracy of text.",
   "private": true,
   "scripts": {
-    "build": "next build --turbopack",
+    "build": "next build",
     "clean": "rm -rf .next node_modules && rm -f pnpm-lock.yaml bun.lockb yarn.lock package-lock.json",
     "lint": "ultracite lint",
     "format": "ultracite format",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "fmc": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "fmw": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "next start",

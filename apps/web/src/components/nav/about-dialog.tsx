@@ -25,17 +25,17 @@ export const AboutDialog = () => {
       <DialogTrigger asChild>
         <SidebarMenuButton tooltip="Learn about our fact-checking system">
           <Info />
-          <span>About ClaimeAI</span>
+          <span>About FactFinder</span>
         </SidebarMenuButton>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[525px]">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            About ClaimeAI
+            About FactFinder
           </DialogTitle>
           <DialogDescription className="space-y-4 text-left">
             <p>
-              ClaimeAI is an advanced AI-powered fact-checking system that helps
+              FactFinder is an advanced AI-powered fact-checking system that helps
               you verify the accuracy of textual claims using cutting-edge
               research methodologies.
             </p>

@@ -233,6 +233,6 @@ export const useFactCheckerStore = create<FactCheckerStore>()(
         }
       },
     }),
-    { name: "claimeai-store" }
+    { name: "factfinder-store" }
   )
 );

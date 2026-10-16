@@ -29,7 +29,7 @@ export const PageFooter = () => {
               className="font-semibold text-neutral-900 text-sm"
               id="about-heading"
             >
-              About ClaimeAI
+              About FactFinder
             </h3>
             <p className="text-neutral-500 text-xs leading-relaxed">
               Our modular LangGraph system breaks down text into individual
@@ -163,7 +163,7 @@ export const PageFooter = () => {
               Connect
             </h3>
             <a
-              aria-label="View ClaimeAI project on GitHub (opens in new tab)"
+              aria-label="View FactFinder project on GitHub (opens in new tab)"
               className="inline-flex items-center gap-2 rounded-md border border-neutral-200 px-3 py-1.5 text-neutral-700 text-xs transition-colors hover:border-neutral-300 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               href="https://github.com/BharathXD/claime"
               rel="noopener noreferrer"
@@ -182,11 +182,11 @@ export const PageFooter = () => {
           transition={{ duration: 0.4, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="flex items-center gap-0.5">
-            <Image alt="ClaimeAI" height={20} src="/logo.svg" width={20} />
-            <p className="font-semibold text-neutral-600 text-sm">ClaimeAI</p>
+            <Image alt="FactFinder" height={20} src="/logo.svg" width={20} />
+            <p className="font-semibold text-neutral-600 text-sm">FactFinder</p>
           </div>
           <p className="mt-3 text-neutral-400 text-xs sm:mt-0">
-            © {new Date().getFullYear()} ClaimeAI. All rights reserved.
+            © {new Date().getFullYear()} FactFinder. All rights reserved.
           </p>
         </motion.div>
       </div>

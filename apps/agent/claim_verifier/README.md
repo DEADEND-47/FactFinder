@@ -84,7 +84,7 @@ If you're using this module, you might want to tweak these settings in `claim_ve
 
 -   `nodes.py` contains:
     -   `QUERY_GENERATION_CONFIG`: I've set it to generate just 1 query per attempt by default, but you can increase this. Just be mindful of search API costs.
-    -   `EVIDENCE_RETRIEVAL_CONFIG`: Controls how many search results per query (default 3) and which search provider to use (`"exa"` or `"tavily"`). Switch between providers by changing the `search_provider` setting.
+    -   `EVIDENCE_RETRIEVAL_CONFIG`: Controls how many search results per query (default 3) and which search provider to use (`"tinyfish"`, `"tavily"`, or `"exa"`). TinyFish provides real-time web intelligence and structured search snippets.
     -   `ITERATIVE_SEARCH_CONFIG`: Sets max retry attempts (default 5). I've found this is the sweet spot - beyond that, you rarely find new information.
 
 -   `llm/config.py`: I've set it to use `gpt-4o-mini` which has a good balance of cost and accuracy for this task. You could try other models, but smaller models sometimes struggle with the nuanced evaluation needed.

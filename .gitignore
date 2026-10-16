@@ -169,18 +169,48 @@ cython_debug/
 .secrets/
 
 # Turbo
-.turbo
+.turbo/
 
-# JS/TS
-apps/web/.next
-apps/web/out
-apps/web/node_modules
+# JS/TS & Next.js
 node_modules/
+apps/web/node_modules/
+apps/extension/node_modules/
+.next/
+apps/web/.next/
+out/
+apps/web/out/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+next-env.d.ts.bak
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Auth / Clerk
+.clerk/
+apps/web/.clerk/
+
+# OS
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# IDE & Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+apps/web/.vscode/*
+!apps/web/.vscode/settings.json
 
 # Python
-.venv
+.venv/
+apps/agent/.venv/
 __pycache__/
 *.pyc
 *.egg-info/
 dist/
 build/
+

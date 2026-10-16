@@ -12,8 +12,8 @@ const FEATURES = [
   },
   {
     icon: Search,
-    title: "Evidence Search",
-    description: "Real-time web validation",
+    title: "TinyFish Search",
+    description: "Live web intelligence & proof",
   },
   {
     icon: Shield,

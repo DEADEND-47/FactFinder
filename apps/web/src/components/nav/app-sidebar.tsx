@@ -239,14 +239,14 @@ export const AppSidebar = () => {
             <SidebarMenuButton asChild size="lg" className="gap-1 pl-0">
               <Link href="/">
                 <Image
-                  alt="ClaimeAI"
+                  alt="FactFinder"
                   className="size-10"
                   height={40}
                   src="/logo.svg"
                   width={40}
                 />
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">ClaimeAI</span>
+                  <span className="truncate font-semibold">FactFinder</span>
                   <span className="truncate text-xs">AI Fact Checker</span>
                 </div>
               </Link>

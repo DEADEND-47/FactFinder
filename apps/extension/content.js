@@ -1,5 +1,5 @@
 // content.js
-console.log("ClaimeAI ChatGPT Extension content script loaded.");
+console.log("FactFinder ChatGPT Extension content script loaded.");
 
 // Style Constants
 const BUTTON_STYLE = `
@@ -46,12 +46,12 @@ function addFloatingButtonToMessage(assistantMessageDiv) {
   const messageTurnRoot = assistantMessageDiv.closest(
     ".group.conversation-turn"
   );
-  if (messageTurnRoot?.querySelector(".claimeAI-btn")) {
+  if (messageTurnRoot?.querySelector(".claimeAI-btn, .factfinder-btn")) {
     return;
   }
 
   const button = document.createElement("button");
-  button.className = "claimeAI-btn";
+  button.className = "claimeAI-btn factfinder-btn";
   button.title = "Check Fact";
 
   // SVG Logo (Checkmark)
@@ -164,7 +164,7 @@ function addFloatingButtonToMessage(assistantMessageDiv) {
   if (actionsToolbarEl) {
     actionsToolbarEl.appendChild(buttonContainer); // Append container instead of button
     console.log(
-      "ClaimeAI button with tooltip added to actions toolbar:",
+      "FactFinder button with tooltip added to actions toolbar:",
       actionsToolbarEl
     );
   } else {
@@ -175,7 +175,7 @@ function addFloatingButtonToMessage(assistantMessageDiv) {
     assistantMessageDiv.appendChild(buttonContainer); // Append container instead of button
   }
   console.log(
-    "ClaimeAI button added to (or attempted for):",
+    "FactFinder button added to (or attempted for):",
     assistantMessageDiv
   );
 }
@@ -184,7 +184,7 @@ function processAssistantMessage(assistantMessageDiv) {
   const messageTurnRoot = assistantMessageDiv.closest(
     ".group.conversation-turn"
   );
-  if (messageTurnRoot?.querySelector(".claimeAI-btn")) {
+  if (messageTurnRoot?.querySelector(".claimeAI-btn, .factfinder-btn")) {
     // Button already exists for this message turn
     return;
   }

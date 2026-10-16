@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 const METHODOLOGIES = [
   { color: "bg-blue-500", label: "Claimify Methodology (Microsoft Research)" },
   { color: "bg-green-500", label: "SAFE Framework (Google DeepMind)" },
+  { color: "bg-teal-500", label: "TinyFish Live Web Intelligence" },
   { color: "bg-purple-500", label: "LangGraph Multi-Agent Orchestration" },
 ] as const;
 

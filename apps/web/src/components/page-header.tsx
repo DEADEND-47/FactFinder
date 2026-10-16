@@ -12,7 +12,7 @@ export const PageHeader = () => (
     transition={{ duration: 0.3 }}
   >
     <Image
-      alt="ClaimeAI"
+      alt="FactFinder"
       className="size-8"
       height={32}
       src="/logo.svg"
@@ -20,7 +20,7 @@ export const PageHeader = () => (
     />
 
     <h1 className="font-semibold text-neutral-900 text-xl tracking-tight">
-      ClaimeAI
+      FactFinder
     </h1>
   </motion.header>
 );

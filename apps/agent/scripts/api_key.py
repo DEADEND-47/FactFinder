@@ -17,7 +17,7 @@ from utils.redis import test_redis_connection
 def print_usage() -> None:
     """Print usage information."""
     print("""
-    🔐 ClaimeAI API Key Manager
+    🔐 FactFinder API Key Manager
 
     Usage:
         python api_key.py generate [description]  - Generate new API key

@@ -1,9 +1,9 @@
 FROM langchain/langgraph-api:3.11
 
 # Image metadata
-LABEL name="claime-agent"
+LABEL name="factfinder-agent"
 LABEL version="1.0.0"
-LABEL description="Claime Multi-Agent Fact Checking System"
+LABEL description="FactFinder Multi-Agent Fact Checking System"
 
 # -- Adding local package . --
 ADD . /deps/agent

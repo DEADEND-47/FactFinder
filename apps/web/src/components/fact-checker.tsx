@@ -70,18 +70,18 @@ export const FactChecker = ({
         <div className="flex items-center justify-between">
           <h3 className="font-medium text-neutral-900 text-sm">Claims</h3>
           {showProcessingIndicator && (
-            <div className="flex items-center gap-2">
-              <div className="h-1 w-1 animate-pulse rounded-full bg-blue-500" />
+            <div className="flex items-center gap-2 rounded-full border border-teal-200/80 bg-teal-50/60 px-2.5 py-1 text-teal-800 text-xs">
+              <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-teal-500" />
               <div
-                className="h-1 w-1 animate-pulse rounded-full bg-blue-500"
+                className="h-1.5 w-1.5 animate-pulse rounded-full bg-teal-500"
                 style={{ animationDelay: "0.2s" }}
               />
               <div
-                className="h-1 w-1 animate-pulse rounded-full bg-blue-500"
+                className="h-1.5 w-1.5 animate-pulse rounded-full bg-teal-500"
                 style={{ animationDelay: "0.4s" }}
               />
-              <span className="text-neutral-500 text-xs">
-                {hasAnyClaims ? "Verifying claims..." : "Extracting claims..."}
+              <span className="font-medium text-[11px]">
+                {hasAnyClaims ? "Searching live web with TinyFish..." : "Extracting claims..."}
               </span>
             </div>
           )}

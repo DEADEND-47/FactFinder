@@ -19,7 +19,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "ClaimeAI | AI-powered factual verification",
+  title: "FactFinder | AI-powered factual verification",
   description:
     "Verify factual accuracy using our modular LangGraph system that extracts claims, cross-references them with real-world evidence, and provides a detailed verification report.",
   icons: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "claim extraction",
     "evidence analysis",
   ],
-  authors: [{ name: "ClaimeAI Team" }],
+  authors: [{ name: "FactFinder Team" }],
 };
 
 const RootLayout = ({ children }: Readonly<React.PropsWithChildren>) => (

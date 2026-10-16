@@ -1,4 +1,4 @@
-app = 'claime-agent'
+app = 'factfinder-agent'
 primary_region = 'bom'
 
 [build]

@@ -47,7 +47,7 @@ export const HowItWorksDialog = () => (
     <DialogContent className="sm:max-w-[600px]">
       <DialogHeader>
         <DialogTitle className="flex items-center gap-2">
-          How ClaimeAI Works
+          How FactFinder Works
         </DialogTitle>
         <DialogDescription className="space-y-4 pt-2 text-left">
           <p>

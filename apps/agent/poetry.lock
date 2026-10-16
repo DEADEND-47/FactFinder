@@ -3077,6 +3077,23 @@ requests = ">=2.26.0"
 blobfile = ["blobfile (>=2)"]
 
 [[package]]
+name = "tinyfish"
+version = "0.9.0"
+description = "Official Python SDK for the TinyFish API"
+optional = false
+python-versions = ">=3.11"
+groups = ["main"]
+files = [
+    {file = "tinyfish-0.9.0-py3-none-any.whl", hash = "sha256:38bb20b9a39b6b752dc55adf2516af51cec47661be8304d9485ae9f333faf28d"},
+    {file = "tinyfish-0.9.0.tar.gz", hash = "sha256:d1fdb31ace9bfeb448c6b9f50ec852a82c42c0dbdcb35dc5f5b64e2c154531a2"},
+]
+
+[package.dependencies]
+httpx = ">=0.27.0"
+pydantic = ">=2.0.0"
+tenacity = ">=8.0.0"
+
+[[package]]
 name = "tokenizers"
 version = "0.21.4"
 description = ""
@@ -3736,4 +3753,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<4.0"
-content-hash = "4d469149efadaf7938b69422e010f82bbdcf0b17d3773dad37210fd64faac5ab"
+content-hash = "1f3947755897418bdf7c1119a08b5c18938a68f1d30235757a24c8307ee1c20e"

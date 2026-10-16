@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { ClipboardCheck, Quote, Scale } from "lucide-react";
+import { ClipboardCheck, ExternalLink, Quote, Scale, Sparkles } from "lucide-react";
 import type React from "react";
 import {
   Sheet,
@@ -9,7 +9,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import type { Claim } from "@/lib/store";
-import { cn } from "@/lib/utils";
+import { cn, extractDomain } from "@/lib/utils";
+import { Favicon } from "./favicon";
 import { VerdictBadge } from "./verdict-badge";
 
 interface CitationProps {
@@ -143,22 +144,54 @@ export const Citation = ({ id, claim, isExpanded, onClick }: CitationProps) => (
                         </p>
                       )}
                       {verdict.sources && verdict.sources.length > 0 && (
-                        <div className="mt-3 border-neutral-100 border-t pt-3">
-                          <div className="mb-2 font-medium text-neutral-600 text-sm">
-                            Sources:
+                        <div className="mt-4 border-neutral-100 border-t pt-3.5">
+                          <div className="mb-2.5 flex items-center justify-between">
+                            <span className="font-semibold text-neutral-800 text-xs">
+                              Verified Evidence Sources
+                            </span>
+                            <span className="text-[11px] font-medium text-teal-700 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-200/60">
+                              TinyFish
+                            </span>
                           </div>
                           <div className="space-y-2">
-                            {verdict.sources.map((source, sidx) => (
-                              <a
-                                className="block text-blue-600 text-sm hover:underline"
-                                href={source.url}
-                                key={`${source.url}-${sidx}`}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                {source.title || source.url}
-                              </a>
-                            ))}
+                            {verdict.sources.map((source, sidx) => {
+                              const isKey = Boolean(source.is_influential);
+                              return (
+                                <a
+                                  className={cn(
+                                    "group flex items-start gap-2.5 rounded-xl border p-2.5 text-xs transition-all duration-200",
+                                    isKey
+                                      ? "border-teal-200/90 bg-teal-50/30 hover:border-teal-300 hover:bg-teal-50/70"
+                                      : "border-neutral-200/80 bg-neutral-50/50 hover:border-neutral-300 hover:bg-white hover:shadow-2xs"
+                                  )}
+                                  href={source.url}
+                                  key={`${source.url}-${sidx}`}
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                >
+                                  <div className="mt-0.5 flex-shrink-0">
+                                    <Favicon url={source.url} />
+                                  </div>
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex items-center gap-1.5">
+                                      <span className="font-semibold text-neutral-800 truncate group-hover:text-teal-700 transition-colors">
+                                        {source.title || extractDomain(source.url)}
+                                      </span>
+                                      {isKey && (
+                                        <span className="inline-flex items-center gap-0.5 rounded px-1 py-0.2 text-[9px] font-semibold uppercase tracking-wider bg-teal-100 text-teal-800 flex-shrink-0">
+                                          <Sparkles className="h-2.5 w-2.5 text-teal-600" />
+                                          Key
+                                        </span>
+                                      )}
+                                    </div>
+                                    <span className="block truncate text-neutral-400 text-[11px] mt-0.5">
+                                      {extractDomain(source.url)}
+                                    </span>
+                                  </div>
+                                  <ExternalLink className="h-3.5 w-3.5 flex-shrink-0 text-neutral-400 group-hover:text-teal-600 transition-colors mt-0.5" />
+                                </a>
+                              );
+                            })}
                           </div>
                         </div>
                       )}
